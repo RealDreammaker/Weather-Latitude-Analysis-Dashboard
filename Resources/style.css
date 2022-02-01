@@ -8,6 +8,7 @@ section{
     background: white;
     padding:6%;
     margin: 10px;
+    padding-right:6%
     min-height: min-content;
 }
 h1, h3 {
@@ -26,13 +27,12 @@ thead{
     margin-top: 1%;
     padding: 1px;
     background: white;
-    /* width: 100%; */
 }
 .navbar li {
     display: inline-block;
     cursor: pointer;
-    margin-left:10px;
-    margin-right:10px;
+    margin-left:5px;
+    margin-right:5px;
     margin-top: 3%;
 }
 li a:hover {
@@ -119,12 +119,11 @@ md (for small laptops - screens equal to or greater than 992px wide) */
     }    
 
     #hiddenbutton {
-        position:fixed;
-        top:2%;
-        right:8%;
+        position:absolute;
+        top:10%;
+        right:2%;
         visibility: visible;
         align:left;
-        aria-expanded:false; 
     }
     .collapse {
         visibility: visible;
