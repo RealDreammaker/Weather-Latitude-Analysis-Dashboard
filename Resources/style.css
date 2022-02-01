@@ -1,0 +1,135 @@
+body{
+    background: rgb(130, 151, 151);    
+}
+article{
+    margin: 10px;
+}
+section{
+    background: white;
+    padding:6%;
+    margin: 10px;
+    min-height: min-content;
+}
+h1, h3 {
+    color:royalblue
+}
+
+h4 {
+    padding-top:2em;
+    text-align:center;
+    color:royalblue;
+}
+thead{
+    font-weight: bolder;
+}
+.navbar {
+    margin-top: 1%;
+    padding: 1px;
+    background: white;
+    /* width: 100%; */
+}
+.navbar li {
+    display: inline-block;
+    cursor: pointer;
+    margin-left:10px;
+    margin-right:10px;
+    margin-top: 3%;
+}
+li a:hover {
+    background-color: rgb(198, 219, 219);
+  }
+
+.hover:hover{
+    background-color: rgb(198, 219, 219);
+}
+.active{
+    border:2px solid royalblue
+}
+
+.post {
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+
+.home{
+    height :100%;
+    margin-left: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: royalblue;
+    color:white;
+    cursor: pointer;
+    font-size: 30px; 
+    align:left;
+}
+/* 
+For desktop: 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} */
+
+#collapse1 {
+    padding-left: 2%;
+}
+#hiddenbutton {
+    visibility: hidden;
+    }
+/* set side menu hidden on bigger than small screen */
+.collapse {
+    visibility: hidden;
+    background-color: white;
+}
+
+
+
+/* xs (for phones - screens less than 768px wide)
+sm (for tablets - screens equal to or greater than 768px wide)
+md (for small laptops - screens equal to or greater than 992px wide) */
+@media (max-width: 768px) {
+  /* For mobile phones: */
+    /* [class*="col-"] {
+        width: 100%;
+    } */
+    .navbar {
+        padding: 1px;
+        background: royalblue;
+    }    
+    body{
+        background: white;    
+    }
+    .navbar ul {
+        visibility: hidden;
+        }
+
+    .navbar li {
+        display: inline-block;
+        cursor: pointer;
+        margin-left:0px;
+        margin-right:0px;
+    }    
+
+    #hiddenbutton {
+        position:fixed;
+        top:2%;
+        right:8%;
+        visibility: visible;
+        align:left;
+        aria-expanded:false; 
+    }
+    .collapse {
+        visibility: visible;
+    }
+    .xsfont{
+        font-size: xx-small;
+    }
+}

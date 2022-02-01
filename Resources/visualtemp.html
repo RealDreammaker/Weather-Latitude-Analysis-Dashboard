@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Temparature</title>
+  <link rel="stylesheet" href="reset.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="sticky-top">
+    <div class="container-fluid">
+      <nav class="navbar">
+        <a class="navbar-brand home" href="../index.html">Latitude</a>
+        <img id="hiddenbutton" src="../assets/menubutton.png" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="float:right;"/>
+
+        <ul>
+          <li>
+            <div class="dropdown ">
+              <button class="btn btn-info dropdown-toggle xsfont" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </button>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="../Resources/visualtemp.html#html_link">Temperature</a>
+                <a class="dropdown-item" href="../resources/visualhumi.html">Humidity</a>
+                <a class="dropdown-item" href="../resources/visualcloud.html">Cloudiness</a>
+                <a class="dropdown-item" href="../resources/visualwind.html">Wind Speed</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a class="nav-link xsfont" href="../resources/comparisons.html">Comparisons</a>
+          </li>
+          <li>
+            <a class="nav-link xsfont" href="../resources/data.html">Data</a>
+          </li>
+        </ul>
+
+      <!--  <div class="clearfix"></div> -->
+      </nav>  
+    </div>
+    <div class="collapse" id="navbarToggleExternalContent">
+      <ul>
+        <li>
+          <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h5 class="panel-title ">
+                  <a class="nav-link" data-toggle="collapse" href="#collapse1">Plots</a>
+                </h5>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse">
+                <a class="nav-link" href="../Resources/visualtemp.html#html_link">Temperature</a>
+                <a class="nav-link" href="../resources/visualhumi.html">Humidity</a>
+                <a class="nav-link" href="../resources/visualcloud.html">Cloudiness</a>
+                <a class="nav-link" href="../resources/visualwind.html">Wind Speed</a>
+                
+              </div>
+              <h6>
+                <a class="nav-link" href="../resources/comparisons.html">Comparisons</a>
+                <a class="nav-link" href="../resources/data.html">Data</a>
+              </h6>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <hr>
+    </div>
+  </div>
+  <!-- nav bar related section ended -->
+
+  <div class="container-fluid">
+    <div class="row ">
+      <div class="col-md-8">
+        <section>
+          <div>
+            <header>
+              <h1>Max Temperature</h1>
+              <hr>
+            </header>
+            <img width=100%  src="../visualizations/temperaturechart.png" alt="City Latitude vs Max Temparature"/>
+            <article> As expected, the weather becomes significantly warmer as one approaches
+              the equator(0 Deg. Latitude).
+            </article>
+            <article>
+              More interestingly, however, is the fact that the 
+              southern hemisphere tends to be warmer at this time of year than the northern 
+              hemisphere. This may du to the tilt of the earth at the time of the year this data 
+              was garthered
+            </article>
+            <br>
+            <h3>Linea Regression Analysis</h3>
+            <hr>
+            <img width=50% style="float:left" src="../visualizations/tempNorth.png" alt="City Latitude vs Max Temparature"/>
+            <img width=50% style="float:right" src="../visualizations/tempSouth.png" alt="City Latitude vs Max Temparature"/>
+            <article> For cities located in the northern hemisphere. There's a strong negative relationship between city max temperature and the latittude (r = 0.85).
+               And there's a medium positive relationship for cities in southern hemisphere (r = 0.48)
+            </article>
+          </div>  
+
+          
+        </section>
+      </div>
+      <div class="col-md-4" style="margin-right: auto;">
+        <section>
+          <h3>Visualizations</h3>
+          <hr>
+          <div class="row">
+            <div class="col-sm-3 col-md-6">
+              <a href="../Resources/visualtemp.html#html_link">
+                <img class="hover active" width=115% src="../visualizations/temperaturechart.png" alt="City Latitude vs Max Temparature"/>
+              </a>
+            </div>
+            <div class="col-sm-3 col-md-6">
+              <a href="../resources/visualhumi.html">
+                <img class="hover" width=115% src="../visualizations/humiditychart.png" alt="City Latitude vs Humidity"/>
+              </a>
+            </div>
+            <div class="col-sm-3 col-md-6">
+              <a href="../resources/visualcloud.html">
+                <img class="hover" width=115% src="../visualizations/cloudinesschart.png" alt="City Latitude vs Cloudiness"/>
+              </a>
+            </div>
+            <div class="col-sm-3 col-md-6">
+              <a href="../resources/visualwind.html">
+                <img class="hover" width=115% src="../visualizations/windchart.png" alt="City Latitude vs Wind speed"/>
+              </a>
+            </div>
+          </div>
+        </section>
+    </div>    
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
