@@ -1,14 +1,13 @@
-# Web Visualization Dashboard
-[Latitude vs temperature and humidity](https://realdreammaker.github.io/Web-Design-Challenge/)
+# [Web Visualization Dashboard](https://realdreammaker.github.io/Web-Design-Challenge/)
+##Latitude Analysis Dashboard with Attitude
 
-## Background
+### Background
 
-## Latitude - Latitude Analysis Dashboard with Attitude
-
-Specifically, we'll be plotting [weather data](Resources/cities.csv).
+The challenge is to plot [weather data](Resources/cities.csv).
 
 In building this dashboard, I created individual pages for each plot and a means by which we can navigate between them. These pages will contain the visualizations and their corresponding explanations. I also have a landing page, a page where we can see a comparison of all of the plots, and another page where we can view the data used to build them.
 
+### Requirements
 
 * A [landing page](#landing-page) containing:
   * An explanation of the project.
@@ -33,5 +32,6 @@ The website must, at the top of every page, have a navigation menu that:
 * Provides two more text links on the right: "Comparisons," which links to the comparisons page, and "Data," which links to the data page.
 * Is responsive (using media queries). The nav must have similar behavior as the screenshots ["Navigation Menu" section](#navigation-menu) (notice the background color change).
 
+### Result
 Finally, the website was deployed to [GitHub pages](https://realdreammaker.github.io/Web-Design-Challenge/).
 
