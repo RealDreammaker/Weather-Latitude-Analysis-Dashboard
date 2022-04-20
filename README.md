@@ -1,5 +1,5 @@
 # Web Visualization Dashboard
-##[Latitude Analysis Dashboard with Attitude](https://realdreammaker.github.io/Web-Design-Challenge/)
+[Latitude Analysis Dashboard with Attitude](https://realdreammaker.github.io/Web-Design-Challenge/)
 
 ### Background
 
