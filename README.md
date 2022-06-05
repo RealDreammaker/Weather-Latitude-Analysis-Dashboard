@@ -16,7 +16,7 @@ At the top of every page, there's a navigation menu that:
 
 
 ### Outcomes
-The website was deployed to [GitHub pages](https://realdreammaker.github.io/Weather-Latitude-Analysis-Dashboard/).
+The [website](https://realdreammaker.github.io/Weather-Latitude-Analysis-Dashboard/) was deployed to GitHub pages.
 </br>
 
 ![intro](Images/app_intro.gif)
